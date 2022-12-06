@@ -89,3 +89,5 @@ class manager {
         }
     }
 }
+
+export default manager

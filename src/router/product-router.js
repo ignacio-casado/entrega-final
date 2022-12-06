@@ -36,5 +36,9 @@ router.put('/:id', (req,res)=>{
 //admin
 })
 router.delete('/:id', (req,res)=>{
-    
+    if(isNaN(req.params.id))return res.status(400).send({status: "error", message: 'paramas err'})
+    if(!admin)return res.status(400).send({status: 'error', message: 'user err'})
+    manager.delete(req.params.id)
+    .then(result => res.send(result))
+    .catch(err=> res.sen({error: 0, mess: err}))
 })

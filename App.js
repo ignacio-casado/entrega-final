@@ -1,7 +1,7 @@
-import  express, { json }  from "express";
-/* import productRouter from './router/product-router'
+import  express  from "express" 
+import productRouter from './router/product-router'
 import cartRouter from './router/cart-router'
- */
+
 // EXPRESS
 const express = express();
 
@@ -9,8 +9,8 @@ const express = express();
 const PORT = process.env.PORT || 8080
 //DATE
 let dateNow = new date()
-//SERVER
 
+//SERVER
 const server = app.listen('PORT', ()=>{
 
     console.log(`Server Up ${PORT} ${dateNow} `)
