@@ -1,7 +1,7 @@
 //clase para carrito
 import fs from 'fs'
 
-const pathToFile = './data/cart.json'
+const pathToFile = './src/data/cart.json'
 
 class cartManager {
     createCart = async (cart)=>{

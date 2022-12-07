@@ -1,7 +1,7 @@
 // clase manager con metodos
 import fs from 'fs'
 
-const pathToFile = './data/products.json'
+const pathToFile = './src/data/products.json'
 
 class manager {
 
